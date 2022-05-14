@@ -41,7 +41,7 @@ SELECT DISTINCT p.id, p.name
 SELECT p.id, p.name, COUNT(p.id) cnt
     FROM Pilot p
     INNER JOIN Flight f
-        ON p.pilot_id = f.first_p	ilot_id
+        ON p.pilot_id = f.first_pilot_id
     INNER JOIN Plane p
         ON pl.plane_id = f.plane_id
     WHERE pl.cargo_flg = 1
